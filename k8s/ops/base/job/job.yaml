@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: start-continuous-delivery
-          image: gcr.io/gitops-sample-dev/app:983dc7a8cb2a98e9deb43d69a5a4d796a13198eb
+          image: gcr.io/gitops-sample-dev/app:1c4f9c536b91a4ed04fc2c9c6c55d0bb67eef2ad
           command: ["/gitops-sample-cli"]
           args: ["slack-notification", "<Trigger>", "<Env>"]
       restartPolicy: Never
@@ -38,7 +38,7 @@ spec:
     spec:
       containers:
         - name: finish-migration
-          image: gcr.io/gitops-sample-dev/app:983dc7a8cb2a98e9deb43d69a5a4d796a13198eb
+          image: gcr.io/gitops-sample-dev/app:1c4f9c536b91a4ed04fc2c9c6c55d0bb67eef2ad
           command: ["/gitops-sample-cli"]
           args: ["slack-notification", "<Trigger>", "<Env>"]
       restartPolicy: Never
@@ -61,7 +61,7 @@ spec:
     spec:
       containers:
         - name: finish-continuous-delivery
-          image: gcr.io/gitops-sample-dev/app:983dc7a8cb2a98e9deb43d69a5a4d796a13198eb
+          image: gcr.io/gitops-sample-dev/app:1c4f9c536b91a4ed04fc2c9c6c55d0bb67eef2ad
           command: ["/gitops-sample-cli"]
           args: ["slack-notification", "<Trigger>", "<Env>"]
       restartPolicy: Never
