@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: migration
-          image: gcr.io/gitops-sample-dev/migration:983dc7a8cb2a98e9deb43d69a5a4d796a13198eb
+          image: gcr.io/gitops-sample-dev/migration:0b63ec0d43355956a9972ee7e031b9d180824ffb
           args: ["-path", "db/migrations", "-database", "mysql://$(MYSQL_CONNECTION)", "up"]
           env:
             - name: MYSQL_CONNECTION
